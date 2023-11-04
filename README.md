@@ -1,5 +1,7 @@
 # a-gis.eth
 
+https://a-gis-001.github.io/a-gis.eth/
+
 This is the repo for the a-gis.eth static website.
 
 ## Republish updates.
@@ -7,7 +9,8 @@ This is the repo for the a-gis.eth static website.
 To re-publish, do the following.
 
 ```
-HASH=$(ipfs add -q index.html)
+ipfs add -q --cid-version=1 index.html >ipfs.txt
+HASH=$(cat ipfs.txt)
 sed "s|HASH|$HASH|g" template.yml >.github/workflows/ipns-publish.yml
 ```
 

@@ -12,5 +12,5 @@ jobs:
       - name: w3name publish
         uses: pawanpaudel93/w3name-action@v0.1
         with:
-          cid: QmXkthPXZC7jJbZA551j5tY9WoyEWN1jzsUH2NMtQ8PUNw
+          cid: QmUT6WJJxHgPdk5HJNDAi1Vx86ftLH9RdjEyjMh1MQh8Bi
           signing_key: ${{  secrets.SIGNING_KEY }}

@@ -11,10 +11,12 @@ function arrayBufferToHexString(buf) {
   return hex.join('')
 }
 
+
 ;(async () => {
   const name = await Name.create()
   const signingKey = arrayBufferToHexString(name.key.bytes)
   await fsPromises.writeFile('ipns.txt',name.toString())
-  console.log(`secret signing key:`,signingKey)
+  await fsPromises.writeFile('signing_key.bin',name.key.bytes)
+  await fsPromises.writeFile('signing_key.txt',signingKey)
 })()
 

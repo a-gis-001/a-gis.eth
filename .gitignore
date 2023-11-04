@@ -1,5 +1,6 @@
 # Repo-specific
-w3name.json
+signing_key.txt
+signing_key.bin
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
