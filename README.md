@@ -45,3 +45,12 @@ https://developers.cloudflare.com/web3/ipfs-gateway/reference/peering-with-conte
 open https://cloudflare-ipfs.com/ipns/$(cat ipns.txt)
 open https://cloudflare-ipfs.com/ipfs/$(cat ipfs.txt)
 ```
+
+## Logo
+
+```
+base64 logo-small.png >logo.txt
+```
+
+Copy/paste content in img tag.
+
