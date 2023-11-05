@@ -37,3 +37,11 @@ which I copied and pasted to a file and then ran `grep -o -E '/.*' raw.txt` to g
 
 Not all succeeded.
 
+Later it seems like cloudflare is the solution.
+
+https://developers.cloudflare.com/web3/ipfs-gateway/reference/peering-with-content-providers/
+
+```
+open https://cloudflare-ipfs.com/ipns/$(cat ipns.txt)
+open https://cloudflare-ipfs.com/ipfs/$(cat ipfs.txt)
+```
