@@ -1,6 +1,6 @@
 # a-gis.eth
 
-https://a-gis-001.github.io/a-gis.eth/
+Backup URL: https://a-gis-001.github.io/a-gis.eth/
 
 This is the repo for the a-gis.eth static website.
 
